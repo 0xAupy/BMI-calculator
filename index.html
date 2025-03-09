@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <div class="card">
+            <form>
+                <div class="input-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" placeholder="Enter height" min="1" required />
+                </div>
+                <div class="input-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" placeholder="Enter weight" min="1" required />
+                </div>
+                <button type="submit" class="calculate-btn">Calculate</button>
+
+                <div id="results"></div>
+
+                <div id="weight-guide">
+                    <h3>BMI Weight Guide</h3>
+                    <div class="guide-container">
+                        <div class="guide-item underweight">
+                            <div class="category">Underweight</div>
+                            <div class="range">&lt; 18.6</div>
+                        </div>
+                        <div class="guide-item normal">
+                            <div class="category">Normal</div>
+                            <div class="range">18.6 - 24.9</div>
+                        </div>
+                        <div class="guide-item overweight">
+                            <div class="category">Overweight</div>
+                            <div class="range">&gt; 24.9</div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

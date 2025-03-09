@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4285f4;
+}
+
+.calculate-btn {
+  display: block;
+  width: 100%;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 25px 0;
+  font-weight: 500;
+}
+
+.calculate-btn:hover {
+  background-color: #3367d6;
+}
+
+#results {
+  margin: 25px 0;
+  text-align: center;
+  font-size: 24px;
+  min-height: 60px;
+}
+
+#results span {
+  display: block;
+  font-size: 42px;
+  font-weight: 700;
+  color: #4285f4;
+}
+
+#weight-guide {
+  margin-top: 30px;
+}
+
+#weight-guide h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.guide-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.guide-item {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.underweight {
+  background-color: #ffe0b2;
+  color: #e65100;
+}
+
+.normal {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+.overweight {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+
+.category {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.range {
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
